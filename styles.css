@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  color: #222;
+}
+
+header {
+  background: #1e3a5f;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.badge.online {
+  background: #2e7d32;
+}
+
+.badge.offline {
+  background: #c62828;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c5282;
+}
+
+.header-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header-lista h2 {
+  margin: 0;
+}
+
+#btn-purgar {
+  background: #c62828;
+  font-size: 0.9rem;
+}
+
+#lista-outbox {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-outbox li {
+  border: 1px solid #ddd;
+  border-left: 5px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#lista-outbox li.pendiente {
+  border-left-color: #f9a825;
+}
+
+#lista-outbox li.sincronizado {
+  border-left-color: #2e7d32;
+}
+
+.hora {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.estado {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.estado.pendiente {
+  background: #fff3cd;
+  color: #8a6d00;
+}
+
+.estado.sincronizado {
+  background: #d4edda;
+  color: #1b5e20;
+}
+
+.vacio {
+  color: #888;
+  font-style: italic;
+}
